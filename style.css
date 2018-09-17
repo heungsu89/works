@@ -1,0 +1,46 @@
+*{margin:0;padding:0;}
+.calendar{
+    margin-left:10px;
+    margin:40px auto;
+    width:700px;
+}
+.chsCalendar{
+    width:100%;
+    height:600px;
+    border-collapse:collapse;
+}
+.chsCalendar th,
+.chsCalendar td{
+    border:1px solid #ccc;
+}
+.chsCalendar tbody{
+    height:100px;
+    overflow-x:auto;
+}
+.chsCalendar tbody tr th,
+.chsCalendar tbody tr td{
+    vertical-align:top;
+}
+.chsCalendar th a,
+.chsCalendar td a{
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+    display:inline-block;
+    padding:.3em;
+}
+.chsCalendar th a.d_date,
+.chsCalendar td a.d_date{
+    color:#ddd;
+}
+.chsCalendar th.toDay,
+.chsCalendar td.toDay{
+    background:#f9e530
+}
+.chsCalendar.cWeek tbody tr td:first-child,
+.chsCalendar.cDay tbody tr td:first-child{
+    text-align:right;
+    font-size:12px;
+    width:8em;
+    vertical-align:center;
+}
